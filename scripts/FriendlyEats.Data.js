@@ -16,10 +16,8 @@
 'use strict';
 
 FriendlyEats.prototype.addRestaurant = function(data) {
-  FriendlyEats.prototype.addRestaurant = function(data) {
-    var collection = firebase.firestore().collection('restaurants');
-    return collection.add(data);
-  };
+  var collection = firebase.firestore().collection('restaurants');
+  return collection.add(data);
 };
 
 FriendlyEats.prototype.getAllRestaurants = function(renderer) {
